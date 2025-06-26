@@ -60,6 +60,16 @@ A explicabilidade foi aplicada ao YOLOv11s-seg manualmente, utilizando hooks par
 
 Caso utilize este trabalho em sua pesquisa, cite a dissertação correspondente.
 
+```
+@misc{galli2025mestrado,
+  author       = {Galli, Hugo},
+  title        = {Detecção e Segmentação de Tumores Cerebrais com YOLOv11 e Mask R-CNN},
+  year         = {2025},
+  howpublished = {\url{https://github.com/hugogalli/mestrado-brain-tumor-detection}},
+  note         = {Repositório do código e dataset da dissertação de mestrado.},
+}
+```
+
 ---
 
 © 2025 - Projeto acadêmico desenvolvido para fins de pesquisa em diagnóstico assistido por IA.
