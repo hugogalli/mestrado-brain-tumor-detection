@@ -7,18 +7,25 @@ Este repositório contém o código-fonte, modelos treinados e dataset anotado u
 ```
 .
 ├── dataset/
-│   ├── images/            # Imagens de RM em T1
-│   ├── annotations/       # Anotações no formato COCO
-│   └── splits/            # Divisões em treino, validação e teste
+│   ├── train/
+│   │   ├── images/         # Imagens de treino
+│   │   └── labels/         # Anotações YOLO de treino
+│   ├── valid/
+│   │   ├── images/         # Imagens de validação
+│   │   └── labels/         # Anotações YOLO de validação
+│   ├── test/
+│   │   ├── images/         # Imagens de teste
+│   │   └── labels/         # Anotações YOLO de teste
+│   └── data.yaml           # Arquivo de configuração do dataset
 ├── maskrcnn/
-│   ├── train.py           # Script de treinamento com Detectron2
-│   └── config.yaml        # Configurações específicas do Mask R-CNN
+│   ├── train.py            # Script de treinamento com Detectron2
+│   └── config.yaml         # Configuração personalizada do Mask R-CNN
 ├── yolov11/
-│   ├── train.py           # Script de treinamento com Ultralytics YOLOv11
-│   ├── gradcam.py         # Implementação manual do Grad-CAM
-│   └── results/           # Curvas e métricas extraídas
-├── README.md
-└── requirements.txt
+│   ├── train.py            # Script de treinamento com Ultralytics YOLOv11
+│   ├── gradcam.py          # Implementação manual do Grad-CAM
+│   └── results/            # Curvas e métricas extraídas
+├── requirements.txt        # Dependências do projeto
+└── README.md
 ```
 
 ## 📌 Objetivo
